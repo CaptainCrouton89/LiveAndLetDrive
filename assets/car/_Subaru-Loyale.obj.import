@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/_Subaru-Loyale.obj-da027006d36a315af29cbe55a6d02801.mesh"
+
+[deps]
+
+files=[ "res://.import/_Subaru-Loyale.obj-da027006d36a315af29cbe55a6d02801.mesh" ]
+
+source_file="res://assets/car/_Subaru-Loyale.obj"
+dest_files=[ "res://.import/_Subaru-Loyale.obj-da027006d36a315af29cbe55a6d02801.mesh", "res://.import/_Subaru-Loyale.obj-da027006d36a315af29cbe55a6d02801.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

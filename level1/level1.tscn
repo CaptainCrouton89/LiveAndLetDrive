@@ -1,0 +1,69 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://actors/Car.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/car/_Subaru-Loyale.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/cementBarrier/cement.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/walkingGirl/walkinggirl.dae" type="PackedScene" id=4]
+[ext_resource path="res://level1/level1.gd" type="Script" id=5]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.7426, 5.34647, 12.1821 )
+
+[node name="level1" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="prop" type="MeshInstance" parent="."]
+transform = Transform( 0.0343761, 0, -0.999409, 0, 1, 0, 0.999409, 0, 0.0343761, -12.2361, 1.54598, 3.79127 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+
+[node name="ConcreteBarrier" type="StaticBody" parent="."]
+transform = Transform( 0.0422966, 0, 0.0906145, 0, 0.1, 0, -0.0906145, 0, 0.0422966, -25.807, 0.00612211, 9.27424 )
+
+[node name="mesh" type="MeshInstance" parent="ConcreteBarrier"]
+transform = Transform( 1, 0, 5.96046e-08, 0, 0.999999, 0, -5.96046e-08, 0, 1, 0, 0, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="ConcreteBarrier"]
+transform = Transform( 1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, 0, 4.76492, 0 )
+shape = SubResource( 1 )
+
+[node name="walkinggirl" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.124269, 2.97325, 17.223 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.923779, -1.37654e-08, -0.382925, 0.240182, 0.778835, 0.579421, 0.298235, -0.627229, 0.719471, 0, 10.2427, 0 )
+
+[node name="walkinggirl2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.08088, 1.36487, -1.03456 )
+
+[node name="Car" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.0343761, 0, -0.999409, 0, 1, 0, 0.999409, 0, 0.0343761, -6.97113, 0, 9.08606 )

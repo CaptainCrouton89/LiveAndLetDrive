@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/walkingGirl/walkinggirl.dae" type="PackedScene" id=1]
+[ext_resource path="res://assets/walkingGirl/skin.material" type="Material" id=2]
+[ext_resource path="res://assets/walkingGirl/shoes.material" type="Material" id=3]
+[ext_resource path="res://assets/walkingGirl/Material.material" type="Material" id=4]
+[ext_resource path="res://assets/walkingGirl/Material_001.material" type="Material" id=5]
+[ext_resource path="res://assets/walkingGirl/hair.material" type="Material" id=6]
+
+[node name="walkinggirl" instance=ExtResource( 1 )]
+
+[node name="hair" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 6 )
+
+[node name="girl" parent="Armature/Skeleton" index="1"]
+material/0 = ExtResource( 2 )
+
+[node name="shoes" parent="Armature/Skeleton" index="2"]
+material/0 = ExtResource( 3 )
+
+[node name="dress" parent="Armature/Skeleton" index="3"]
+material/0 = ExtResource( 4 )
+material/1 = ExtResource( 5 )
